@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+str = "Java, javascript, java";
+result = str.match(/java/ig);
+document.write(result + "<br>");
+result = str.replaceAll("java", "JAVA");
+document.write(result + "<br><br>");
+
+str = "one two three four five";
+arr = str.split(" ");
+for (item in arr) {
+	document.write(arr[item] + "<br>");
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+<script>
+$(function() {
+	$("#button1").click(function() {
+		let name = $("#name").val();
+		alert(name);
+		name = prompt("name:","kim");
+		$("#name").val(name);
+		$("#img1").attr("src", "../images/melon.jpg");
+		$("#img1").attr({
+			"width" : "300px",
+			"height" : "300px"
+		});
+	});
+});
+</script>
+</head>
+<body>
+name : <input id="name" value=""><br>
+<img id="img1" src="../images/tomato.png"><br>
+<button id="button1">OK</button>
+</body>
+</html>

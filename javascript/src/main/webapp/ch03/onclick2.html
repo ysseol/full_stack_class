@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function change(img) {
+	document.body.style.backgroundImage = "url("+ img +")";
+}
+</script>
+<style>
+body {
+	background-image: url('../images/winter.jpg');
+	background-size:cover;
+}
+</style>
+</head>
+<body>
+<h2>change background</h2>
+<input type="button" value="background 1" onclick="change('../images/winter.jpg')">
+<input type="button" value="background 2" onclick="change('../images/summer.jpg')">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+car = {
+		maker : "Hyundai",
+		model : "Avante",
+		year : 2024,
+		speed : 50,
+		speedUp: function() {this.speed += 10;},
+		speedDown: function() {this.speed -= 10;}
+};
+car.speedUp();
+document.write(car["speed"]+"<br>");
+document.write(car["maker"]+"<br>");
+document.write(car["model"]+"<br>");
+document.write(car["year"]+"<br>");
+document.write(car.maker+"<br>");
+document.write(car.model+"<br>");
+document.write(car.year+"<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

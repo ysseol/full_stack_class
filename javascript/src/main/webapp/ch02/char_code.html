@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+// let str='ABCDEFG';
+let str='가나다라마바사힣';
+for(i = 0; i < str.length; i++){
+	let charCode = str.charCodeAt(i);
+	document.write(charCode+' ');
+}
+document.write('<br>');
+for(i = 0; i <= 255; i++){
+	document.write(i+':'+String.fromCharCode(i)+' ');
+}
+document.write('<br>');
+for(i = 44032; i <= 55203; i++){
+	document.write(String.fromCharCode(i)+' ');	
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>
