@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+아이디 : <input id="id"><br>
+비번 : <input type="password" id="pwd"><br>
+<input type="button" value="확인" id="btnLogin">
+<div id="div1">결과 출력 영역</div>
+<script>
+document.getElementById("btnLogin").onclick = () => {
+	const id = document.getElementById("id").value;
+	const pwd = document.getElementById("pwd").value;
+	fetch("result2.jsp", {
+		method: "post",
+		body: new URLSearchParams({ id, pwd })
+	})
+	.then(res => res.text())
+	.then(txt => document.getElementById("div1").innerHTML = txt);
+};
+</script>
+</body>
+</html>

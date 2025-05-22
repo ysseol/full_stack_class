@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+키워드를 입력하세요
+<input type="text" id="search">
+<div id="div1">검색 결과 출력 영역</div>
+<script>
+document.getElementById("search").onkeyup = () => {
+	const search = document.getElementById("search").value;
+	const div1 = document.getElementById("div1");
+	
+	if (search.length === 0) {
+		div1.style.visibility = "hidden";
+	} else {
+		div1.style.visibility = "visible";
+		fetch("result3.jsp?search=" + encodeURIComponent(search))
+			.then(res => res.text())
+			.then(txt => div1.innerHTML = txt);
+	}
+};
+</script>
+</body>
+</html>
