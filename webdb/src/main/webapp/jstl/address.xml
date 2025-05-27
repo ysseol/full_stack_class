@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="address.xsl" ?> -->
+<items>
+	<person>
+		<name>kim</name>
+		<birth>2000.01.05</birth>
+		<tel>02-222-3355</tel>
+		<address>서울 영등포구</address>
+	</person>
+	<person>
+		<name>park</name>
+		<birth>1995.01.05</birth>
+		<tel>02-652-3335</tel>
+		<address>서울 마포구</address>
+	</person>
+	<person>
+		<name>hong</name>
+		<birth>2005.01.05</birth>
+		<tel>02-877-3355</tel>
+		<address>서울 종로구</address>
+	</person>
+</items>
