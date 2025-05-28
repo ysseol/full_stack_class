@@ -17,10 +17,9 @@ $(function() {
 
 });
 function list() {
-    let params ={"search_option" : $("#search_option").val(), "search": $("#search").val()};
-    const query = new URLSearchParams(params).toString();
-
-    fetch(`<%=request.getContextPath()%>/memo_servlet/list.do?${query}`)
+    let search_option=$("#search_option").val();
+    let search=$("#search").val();
+    fetch("<%=request.getContextPath()%>/memo_servlet/list.do?search_option="+search_option+"&search="+search)
       .then(response => response.text())
       .then(txt => {
         document.getElementById("result").innerHTML = txt;
