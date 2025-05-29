@@ -22,7 +22,7 @@ public class MultiTableClient extends JFrame {
 	
 	public MultiTableClient() {
 		try {
-			socket = new Socket("localhost", 9000);
+			socket = new Socket("localhost", 9999);
 			dis = new DataInputStream(socket.getInputStream());
 			dos = new DataOutputStream(socket.getOutputStream());
 		} catch (Exception e) {
