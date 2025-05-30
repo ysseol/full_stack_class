@@ -1,0 +1,9 @@
+http://java.ros.kr/member/login.asp
+
+리눅스 IP 192.168.179.128
+
+mysql -h 192.168.0.225 -u user -p1234
+
+mvnrepository.com
+
+java -jar lombok.jar
