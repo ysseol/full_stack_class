@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/include/css/bootstrap.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
 $(function(){
     $("#btnUpdate").click(function(){
@@ -32,26 +33,27 @@ $(function(){
 });
 </script>
 </head>
-<body>
-<h2>메모 수정</h2>
-<form name="form1" method="post">
-<table border="1" style="width: 550px">
-  <tr>
-    <td>이름</td>
-    <td><input type="text" name="writer" id="writer" value="${map.WRITER}"></td>
-  </tr>
-  <tr>
-    <td>메모</td>
-    <td><input type="text" name="memo" id="memo" size="60"  value="${map.MEMO}"></td>
-  </tr>
-  <tr align="center">
-    <td colspan="2">
-      <input type="hidden" name="idx" value="${map.IDX}">
-      <input type="button" value="수정" id="btnUpdate"> 
-      <input type="button" value="삭제" id="btnDelete">
-    </td>
-  </tr>
-</table>
-</form>
+<body class="container my-5">
+    <h2 class="text-center mb-4">메모 수정</h2>
+
+    <form name="form1" method="post" class="mx-auto" style="max-width:600px;">
+        <div class="mb-3">
+            <label for="writer" class="form-label">이름</label>
+            <input type="text" class="form-control" name="writer" id="writer" value="${map.WRITER}">
+        </div>
+
+        <div class="mb-3">
+            <label for="memo" class="form-label">메모</label>
+            <input type="text" class="form-control" name="memo" id="memo" value="${map.MEMO}">
+        </div>
+
+        <input type="hidden" name="idx" value="${map.IDX}">
+
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-primary" id="btnUpdate">수정</button>
+            <button type="button" class="btn btn-danger" id="btnDelete">삭제</button>
+        </div>
+    </form>
+    
 </body>
 </html>
