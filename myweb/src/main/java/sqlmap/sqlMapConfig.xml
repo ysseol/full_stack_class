@@ -18,5 +18,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     	<mapper resource="survey/survey.xml" />
     	<mapper resource="guestbook/guestbook.xml" />
     	<mapper resource="page/emp.xml" />
+    	<mapper resource="shop/admin.xml" />
     </mappers>
 </configuration>
