@@ -19,5 +19,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     	<mapper resource="guestbook/guestbook.xml" />
     	<mapper resource="page/emp.xml" />
     	<mapper resource="shop/admin.xml" />
+    	<mapper resource="shop/product.xml" />
     </mappers>
 </configuration>
