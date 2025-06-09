@@ -9,7 +9,7 @@
 <script>
 function delete_recipe(id){
 	if(confirm("삭제하시겠습니까?")){
-		location.href="<%=request.getContextPath()%>/recipe_servlet?action=delete&id"+id;
+		location.href="<%=request.getContextPath()%>/recipe_servlet?action=delete&id="+id;
 	}
 }
 </script>
@@ -34,10 +34,9 @@ function delete_recipe(id){
     <c:forEach var="recipe" items="${recipes}">
         <li>
             <strong>
-                <a href="<%=request.getContextPath()%>/recipe_servlet?action=view&id=${recipe.id}">
-                    ${recipe.title}
-                </a>
+                <a href="<%=request.getContextPath()%>/recipe_servlet?action=view&id=${recipe.id}">${recipe.title}</a>
             </strong>
+            
             [<a href="<%=request.getContextPath()%>/recipe_servlet?action=edit&id=${recipe.id}">수정</a>]
             [<a href="#" onclick="delete_recipe('${recipe.id}')">삭제</a>]
         </li>
